@@ -1,0 +1,104 @@
+.package {
+  padding-top: 34px;
+  padding-bottom: 47px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 6px;
+  box-shadow: 5px 8.66px 40px rgba(99, 117, 138, 0.3);
+  background-color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.package.last {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .package {
+    margin-bottom: 0;
+  }
+}
+.package__type {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #242526;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.package__price {
+  font-family: 'Noto Sans', ALSRubl;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 700;
+  color: #242526;
+  margin-bottom: 27px;
+}
+.package__price:after {
+  content: 'c';
+  font-family: 'als_rublregular';
+}
+.package__period {
+  font-size: 12px;
+  letter-spacing: 0px;
+  line-height: 30px;
+  color: #242526;
+  font-family: "Noto Sans";
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+.package__benefits {
+  font-size: 14px;
+  line-height: 30px;
+  color: #242526;
+  font-family: "Noto Sans";
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.package__benefits .package__ul {
+  margin: 0;
+  padding: 0;
+}
+.package__benefits .package__ul .package__ul__el {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+.package__benefits .package__ul .package__ul__el:before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url(/apollo-404/img/icons/ok_icon_4197.png);
+  background-repeat: no-repeat;
+  background-position: left 2px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-family: "Noto Sans";
+  font-weight: 700;
+  text-align: center;
+  padding-top: 10px;
+  width: 150px;
+  height: 42px;
+  border-radius: 21px;
+  box-shadow: 4px 6.928px 16px #ababab;
+  background-color: #252525;
+}
+.button:hover,
+.button:active,
+.button:focus {
+  text-decoration: none;
+  background-color: #ffc80a;
+  color: #ffffff;
+}
+.subtitle_text {
+  margin-bottom: 50px;
+  margin-top: 0;
+}

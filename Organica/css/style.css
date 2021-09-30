@@ -1,0 +1,229 @@
+@import "utils.css";
+@import "normalize.css";
+
+html {
+    font-family: Sans-Serif;
+}
+
+body {
+    font-family: Arial, Tahoma, Helvetica, sans-serif;
+}
+
+/*..............HEAD..................*/
+.header {
+    background-image: url(../img/head-bg.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 887px;
+    position: relative;
+    padding-top: 171px;
+}
+
+.logo {
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    width: 73px;
+    height: 73px;
+    position: absolute;
+    top: 29px;
+    left: 192px;
+}
+
+.container {
+    width: 960px;
+    margin-left: 192px;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.navigation {}
+
+.navigation .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navigation .menu .menu_el {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin-right: 139px;
+}
+
+.navigation .menu .menu_el:last-child {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin-right: 0px;
+}
+
+.navigation .menu .menu_el .menu_el_link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.navigation .menu .menu_el .menu_el_link:hover {
+    text-decoration: underline;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.navigation .menu .menu_el .menu_el_link:active {
+    text-decoration: underline;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+h1 {
+    text-shadow: 0.5px 0.866px 1px #2e6b82;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 62px;
+    color: #ffffff;
+    margin-top: 60px;
+}
+
+.header_text {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    margin-top: -15px;
+    color: #ffffff;
+    text-shadow: 0.5px 0.866px 1px #357d98;
+}
+
+/*//................HEAD................*/
+
+/*..................BODY................*/
+.body_content {
+    margin-top: 108px;
+    margin-bottom: 158PX;
+}
+
+.column_left {
+    border-right: 1px solid #eaeaea;
+    padding-right: 40px;
+    width: 310px;
+    float: left;
+
+}
+
+.column_right {
+    float: right;
+    width: 590px;
+
+}
+
+.column_left_text {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    color: #fe992a;
+    line-height: 28px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #fe992a;
+    letter-spacing: 0.005px;
+    margin: 0;
+}
+
+.column_right_text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #737c85;
+    line-height: 28px;
+    margin-top: 18px;
+    letter-spacing: 0.12px;
+}
+
+span {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+    color: #737c85;
+}
+
+/*//..................BODY................*/
+
+
+/*..................FOOT................*/
+.footer {
+    background-image: url(/Organica/img/bg-footer.jpg);
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 158px;
+    padding-top: 29.5px;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+
+}
+
+.contacts {
+    padding: 0;
+    float: left;
+    list-style-type: none;
+    margin-right: 75.07px;
+}
+
+.contacts:last-child {
+    padding: 0;
+    float: left;
+    list-style-type: none;
+    margin-right: 0;
+}
+
+.contacts_el {
+    line-height: 29px;
+}
+
+
+.contacts_el .contacts_el_link {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 18px;
+
+}
+
+.contacts_el .contacts_el_link:hover {
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.contacts_el .contacts_el_link:active {
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+}

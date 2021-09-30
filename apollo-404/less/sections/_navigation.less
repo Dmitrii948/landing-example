@@ -1,0 +1,127 @@
+.navigation {
+    background-color: #38383a;
+    position: relative;
+    box-shadow: 0px 5px 10px #2a496d;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+    @media (min-width:992px) {
+        position: static;
+        background-color: #38383a;
+        padding-top: 23px;
+        padding-bottom: 23px;
+    }
+}
+
+.navigation__ul {
+    font-family: 'Noto Sans', sans-serif;
+    display: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    background-color: #35577d;
+
+    @media (min-width: 992px) {
+        display: flex;
+        background-color: #38383a;
+    }
+}
+
+.navigation__ul__li {
+    color: #ffffff;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #496d95;
+
+    @media (min-width: 992px) {
+        border-bottom: none;
+        padding: 0;
+    }
+
+    &:hover,
+    &:active {
+        color: #ffcc00;
+    }
+}
+
+.navigation__ul__li__a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 22px;
+    padding-top: 22px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    @media (min-width: 992px) {
+        display: inline;
+        padding: 0;
+    }
+
+    &:hover,
+    &:active {
+        color: #ffcc00;
+    }
+
+}
+
+.navigation__toggle-button {
+    background-color: #38383a;
+    cursor: pointer;
+    display: block;
+    color: #ffffff;
+
+    &:active,
+    &:focus {
+        background-color: #16385f;
+    }
+
+    position: relative;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: 700;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 20px;
+        background: url(/apollo-404/img/icons/navigation-icon.png);
+        background-repeat: no-repeat;
+        right: 15px;
+        top: 23px;
+    }
+
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+
+.navigation__toggle-button--active {
+    background-color: #16385f;
+}
+
+.container--mobile--no-padding {
+    padding-right: 0;
+    padding-left: 0;
+
+    @media (max-width: 991px) {
+        max-width: 100%;
+    }
+
+    @media (min-width: 992px) {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}

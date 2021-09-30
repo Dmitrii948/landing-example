@@ -1,0 +1,184 @@
+.contact-form {
+  font-family: 'NotoSans', sans-serif;
+
+  .contact-form__input {
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    color: #00599a;
+    margin-bottom: 10px;
+    padding: 13px 22px;
+
+    &:active,
+    &:focus,
+    &:hover {
+      border: 3px solid #a2d1f4;
+      padding: 10px 19px;
+    }
+
+    &::-webkit-input-placeholder {
+      color: #00599a;
+      opacity: 0.5;
+    }
+
+    &::-moz-placeholder {
+      color: #00599a;
+      opacity: 0.5;
+    }
+
+    &:-ms-input-placeholder {
+      color: #00599a;
+      opacity: 0.5;
+    }
+
+    &::-ms-input-placeholder {
+      color: #00599a;
+      opacity: 0.5;
+    }
+
+    &::placeholder {
+      color: #00599a;
+      opacity: 0.5;
+    }
+  }
+
+  .contact-form__input--half-width {
+    float: left;
+    margin-right: 2%;
+    width: 49%;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .contact-form__textarea {
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #00599a;
+    height: 128px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 13px 22px;
+
+    &:active,
+    &:focus,
+    &:hover {
+      border: 3px solid #a2d1f4;
+      padding: 10px 19px;
+    }
+
+    &::-webkit-input-placeholder {
+      color: #00599a;
+      opacity: 0.5;
+    }
+
+    &::-moz-placeholder {
+      color: #00599a;
+      opacity: 0.5;
+    }
+
+    &:-ms-input-placeholder {
+      color: #00599a;
+      opacity: 0.5;
+    }
+
+    &::-ms-input-placeholder {
+      color: #00599a;
+      opacity: 0.5;
+    }
+
+    &::placeholder {
+      color: #00599a;
+      opacity: 0.5;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    /*    .contact-form__bg-pencil {
+        position: relative;
+    }*/
+
+    .contact-form__bg-pencil:after {
+      position: absolute;
+      left: 75%;
+      top: 75%;
+      display: block;
+      width: 203px;
+      height: 153px;
+      content: '';
+
+      background-image: url('../img/bg/pencil.png');
+      background-repeat: no-repeat;
+      background-position: left top;
+    }
+  }
+
+  .contact-form__submit {
+    width: 100%;
+    font-size: 18px;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+      width: auto;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 22px;
+    }
+
+    padding: 8px 47px 12px;
+    background-color: transparent;
+    border: 4px solid #fff;
+    border-radius: 28px;
+
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    transition: all 0.3s ease-in;
+
+    &:hover,
+    &:focus {
+      color: #065a97;
+      background-color: #fff;
+    }
+
+    &:active {
+      background-color: transparent;
+      color: #ffe400;
+      border: 4px solid #ffe400;
+    }
+  }
+}
+
+label.error {
+  background-color: #c62828;
+  position: relative;
+  display: block;
+  border-radius: 8px;
+  color: #fff;
+  padding: 5px 15px 8px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 2px;
+
+  @cornerSize: 12px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 40px;
+
+    margin-left: -@cornerSize;
+    width: 0;
+    height: 0;
+    border-bottom: @cornerSize solid #c62828;
+    border-right: @cornerSize solid transparent;
+    border-left: @cornerSize solid transparent;
+  }
+}

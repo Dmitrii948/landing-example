@@ -1,0 +1,37 @@
+.definition-list {
+    margin: 0 0 43px;
+    padding: 0;
+    list-style-type: none;
+
+    .definition-list__item {
+        margin: 0 0 13px;
+        padding: 0;
+    }
+
+    .definition-list__def {
+        font-size: 14px;
+        font-weight: 700;
+        color: #0052c2;
+        line-height: 26px;
+        font-family: 'Noto Sans',
+            sans-serif;
+
+        &--light {
+            color: #a2d1f4;
+
+        }
+
+        &--bigger {
+            font-size: 16px;
+        }
+    }
+
+    .definition-list__desc {
+        font-size: 14px;
+        line-height: 26px;
+
+        @media (min-width:768px) {
+            font-size: 16px;
+        }
+    }
+}

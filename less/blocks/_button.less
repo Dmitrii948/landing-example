@@ -1,0 +1,44 @@
+.button {
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    background-color: #0052c2;
+    border-radius: 24px;
+    filter: drop-shadow(1.5px 2.598px 7.5px rgba(0, 82, 194, 0.5));
+    cursor: pointer;
+    padding: 11px 26px 14px;
+    margin-bottom: 60px;
+
+    @media (min-width:768px) {
+        margin-bottom: 40px;
+    }
+
+    @media (min-width:992px) {
+        margin-bottom: 70px;
+    }
+
+    .fa-download {
+        margin-right: 5px;
+        color: white;
+        font-size: 18px;
+    }
+
+    &:hover,
+    &:focus {
+        color: #0052c2;
+        background-color: #fff;
+
+        .fa-download {
+            color: #0052c2;
+        }
+    }
+
+    &:active {
+        color: #ffe400;
+        background-color: #0052c2;
+
+        .fa-download {
+            color: #ffe400;
+        }
+    }
+}

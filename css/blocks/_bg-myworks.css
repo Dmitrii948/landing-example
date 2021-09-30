@@ -1,0 +1,7 @@
+@media (min-width: 1500px) {
+  .bg-myworks {
+    background-image: url(../../img/bg/gear.png);
+    background-repeat: no-repeat;
+    background-position: left 55%;
+  }
+}

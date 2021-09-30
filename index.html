@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titles -->
+    <title>Персональный сайт портфолио - Дмитрий Потехин</title>
+    <meta name="keywords" content="Ключевые слова..." />
+    <meta name="description" content="Описание страницы..." />
+    <!-- Syles -->
+    <link
+      rel="stylesheet"
+      href="libs/bootstrap-4.4.1-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link
+      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- FavIcons -->
+    <link
+      rel="shortcut icon"
+      href="img/favicons/favicon-48x48.ico"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+  </head>
+
+  <body>
+    <!-- Шапка -->
+    <header class="header clearfix">
+      <!--       навигация-->
+      <nav class="navigation clearfix">
+        <!-- navigation icon -->
+        <button
+          id="navigation__button"
+          class="cmn-toggle-switch cmn-toggle-switch__htx"
+        >
+          <span>toggle menu</span>
+        </button>
+        <!--  // navigation icon-->
+        <ul class="navigation__list">
+          <li><a href="#resume">РЕЗЮМЕ</a></li>
+          <li><a href="#portfolio">ПОРТФОЛИО</a></li>
+          <li><a href="#contacts">КОНТАКТЫ</a></li>
+        </ul>
+      </nav>
+      <!--      // навигация-->
+      <!--   аватар-->
+      <div class="user-photo user-photo--shadow">
+        <img src="usercontent/img/photo-small.jpg" alt="photo" />
+      </div>
+      <!-- //  аватар-->
+      <h1 class="header__title">Дмитрий Потехин</h1>
+      <h2 class="header__subtitle">HTML верстальщик сайтов</h2>
+
+      <a href="#resume" class="mouse_scroll">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <div>
+          <span class="m_scroll_arrows unu"></span>
+          <span class="m_scroll_arrows doi"></span>
+          <span class="m_scroll_arrows trei"></span>
+        </div>
+      </a>
+    </header>
+    <!-- // Шапка -->
+
+    <!-- Резюме -->
+    <div class="bg-resume">
+      <div id="resume" class="container">
+        <div class="row">
+          <!-- Фотография пользователя -->
+          <div class="d-none d-md-block col-md-2 col-lg-3">
+            <div class="user-photo user-photo--big">
+              <img src="usercontent/img/photo-big.jpg" alt="photo" />
+            </div>
+          </div>
+          <!-- // Фотография пользователя -->
+
+          <!-- Резюме пользователя -->
+          <div class="col-sm-12 col-md-10 col-lg-9">
+            <div class="heading">Резюме</div>
+            <p>
+              <strong>Дмитрий Потехин</strong><br />22 года, Орёл, Россия<br />Родился
+              и вырос в городе Орле. Окончил среднюю школу, поступил в ОГУ имени
+              И.С.Тургенева и обучался на специальнольности "Прикладная
+              информатика". Самостоятельно изучаю и практикуюсь в направление
+              web-разработки.
+            </p>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="heading heading--medium">Опыт работы</div>
+                <ul class="definition-list">
+                  <li class="definition-list__item">
+                    <div class="definition-list__def">2019</div>
+                    <div class="definition-list__desc">
+                      <p>Фриланс</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="heading heading--medium">Образование</div>
+                <ul class="definition-list">
+                  <li class="definition-list__item">
+                    <div class="definition-list__def">ИЮНЬ-АВГУСТ 2019</div>
+                    <div class="definition-list__desc">
+                      <p>Курсы по верстке сайтов HTML5, CSS3 - WebCademy.ru</p>
+                    </div>
+                  </li>
+                  <li class="definition-list__item">
+                    <div class="definition-list__def">2016-2021</div>
+                    <div class="definition-list__desc">
+                      <p>
+                        Орловский государственный университет имени
+                        И.С.Тургенева, направление "Прикладная информатика"
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="button">
+              <i class="fa fa-download" aria-hidden="true"></i>Скачать резюме
+            </div>
+          </div>
+          <!-- // Резюме пользователя -->
+        </div>
+      </div>
+    </div>
+    <!--// Резюме -->
+
+    <div class="line"></div>
+
+    <!-- Портфолио -->
+    <div class="bg-myworks">
+      <div id="portfolio" class="container">
+        <div class="heading heading--center">Мои работы</div>
+        <!--Фильтр работ-->
+        <div class="filter">
+          <ul class="filter__block">
+            <li class="filter__element">
+              <span
+                class="filter__button filter__button--active"
+                data-filter="all"
+                >ВСЕ</span
+              >
+            </li>
+            <li class="filter__element">
+              <span class="filter__button" data-filter=".html-css"
+                >HTML+CSS</span
+              >
+            </li>
+            <li class="filter__element">
+              <span class="filter__button" data-filter=".bootstrap"
+                >BOOTSTRAP</span
+              >
+            </li>
+            <li class="filter__element">
+              <span class="filter__button" data-filter=".tutorial"
+                >УЧЕБНЫЕ</span
+              >
+            </li>
+            <li class="filter__element">
+              <span class="filter__button" data-filter=".payed">НА ЗАКАЗ</span>
+            </li>
+          </ul>
+        </div>
+        <!--//Фильтр работ-->
+        <div class="row" id="portfolio-project">
+          <!--Работа в портфолио-->
+          <div class="col-sm-4 mix html-css tutorial">
+            <div class="portfolio-item">
+              <div class="portfolio-item__img">
+                <a href="/Organica/index.html" target="_blank">
+                  <div class="portfolio-item__img__hover">
+                    <i class="fa fa-search" aria-hidden="true"></i><br />
+                    <span>смотреть макет</span>
+                  </div>
+                  <img src="usercontent/img/project_organica.jpg" alt="" />
+                </a>
+              </div>
+              <div class="portfolio-item__title">
+                <a href="/Organica/index.html" target="_blank"
+                  >Учебный макет Organica</a
+                >
+              </div>
+              <div class="portfolio-item__description">
+                Вёрстка одностраничного сайта по PSD макету
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 mix bootstrap tutorial">
+            <div class="portfolio-item">
+              <div class="portfolio-item__img">
+                <a href="/apollo-404/index.html" target="_blank">
+                  <div class="portfolio-item__img__hover">
+                    <i class="fa fa-search" aria-hidden="true"></i><br />
+                    <span>смотреть макет</span>
+                  </div>
+                  <img src="usercontent/img/project_apollo.jpg" alt="" />
+                </a>
+              </div>
+              <div class="portfolio-item__title">
+                <a href="/apollo-404/index.html" target="_blank"
+                  >Учебный макет Аполло 404</a
+                >
+              </div>
+              <div class="portfolio-item__description">
+                Вёрстка одностраничного сайта по PSD макету
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 mix bootstrap tutorial">
+            <div class="portfolio-item">
+              <div class="portfolio-item__img">
+                <a href="#">
+                  <div class="portfolio-item__img__hover">
+                    <i class="fa fa-search" aria-hidden="true"></i><br />
+                    <span>смотреть макет</span>
+                  </div>
+                  <img src="usercontent/img/project_portfolio.jpg" alt="" />
+                </a>
+              </div>
+              <div class="portfolio-item__title">
+                <a href="#">Личный сайт портфолио</a>
+              </div>
+              <div class="portfolio-item__description">
+                Вёрстка личного сайта портфолио на котором вы сейчас находитесь
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--            <div class="row">
+                <div class="col-sm-4">
+                    <div class="portfolio-item">
+                        <div class="portfolio-item__img"><img src="/img/placeholders/project_placeholder.jpg" alt=""></div>
+                        <div class="portfolio-item__title"><a href="#">Учебный макет Organica</a></div>
+                        <div class="portfolio-item__description">Вёрстка одностраничного сайта по PSD макету</div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="portfolio-item">
+                        <div class="portfolio-item__img"><img src="/img/placeholders/project_placeholder.jpg" alt=""></div>
+                        <div class="portfolio-item__title"><a href="#">Учебный макет Organica</a></div>
+                        <div class="portfolio-item__description">Вёрстка одностраничного сайта по PSD макету</div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="portfolio-item">
+                        <div class="portfolio-item__img"><img src="/img/placeholders/project_placeholder.jpg" alt=""></div>
+                        <div class="portfolio-item__title"><a href="#">Учебный макет Organica</a></div>
+                        <div class="portfolio-item__description">Вёрстка одностраничного сайта по PSD макету</div>
+                    </div>
+                </div>
+            </div>-->
+        <!--Работа в портфолио-->
+      </div>
+    </div>
+    <!-- // Портфолио -->
+
+    <!-- Контакты -->
+    <div class="bg-contacts">
+      <div id="contacts" class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="heading heading--white">Контакты</div>
+            <div class="contacts__description">
+              <p>
+                Если вы ищите специалиста по верстке сайтов, front-end
+                разработчика в команду или для работы над проектом — я к вашим
+                услугам.
+              </p>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <ul class="definition-list">
+                  <li class="definition-list__item">
+                    <div
+                      class="
+                        definition-list__def
+                        definition-list__def--light
+                        definition-list__def--bigger
+                      "
+                    >
+                      EMAIL
+                    </div>
+                    <div class="definition-list__desc">
+                      <p>
+                        <a href="mailto:dp04625@gmail.com">dp04625@gmail.com</a>
+                      </p>
+                    </div>
+                  </li>
+                  <li class="definition-list__item">
+                    <div
+                      class="
+                        definition-list__def
+                        definition-list__def--light
+                        definition-list__def--bigger
+                      "
+                    >
+                      SKYPE
+                    </div>
+                    <div class="definition-list__desc">
+                      <p><a href="skype:dp97_97?chat">dp97_97</a></p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-lg-6">
+                <ul class="definition-list">
+                  <li class="definition-list__item">
+                    <div
+                      class="
+                        definition-list__def
+                        definition-list__def--light
+                        definition-list__def--bigger
+                      "
+                    >
+                      ТЕЛЕФОН
+                    </div>
+                    <div class="definition-list__desc">
+                      <p><a href="tel:+79803624830">+79803624830</a></p>
+                    </div>
+                  </li>
+                  <li class="definition-list__item">
+                    <div
+                      class="
+                        definition-list__def
+                        definition-list__def--light
+                        definition-list__def--bigger
+                      "
+                    >
+                      АДРЕС
+                    </div>
+                    <div class="definition-list__desc">
+                      <p>Россия, Орёл</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <ul class="definition-list">
+              <li class="definition-list__item">
+                <div
+                  class="
+                    definition-list__def
+                    definition-list__def--light
+                    definition-list__def--bigger
+                  "
+                >
+                  Социальные сети
+                </div>
+                <div class="definition-list__desc">
+                  <div class="social-icons">
+                    <a
+                      href="https://vk.com/id132148350"
+                      class="fa fa-vk"
+                      aria-hidden="true"
+                    ></a>
+                    <a
+                      href="https://twitter.com/seemgo0d"
+                      class="fa fa-twitter"
+                      aria-hidden="true"
+                    ></a>
+                    <a
+                      href="https://www.instagram.com/dimapotekhin_/"
+                      class="fa fa-instagram"
+                      aria-hidden="true"
+                    ></a>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100002021740461"
+                      class="fa fa-facebook"
+                      aria-hidden="true"
+                    ></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <div class="heading heading--medium heading--white">
+              Связаться со мной
+            </div>
+            <form class="contact-form" id="contact-form">
+              <!-- Hidden Required fields-->
+              <input
+                type="hidden"
+                name="project_name"
+                value="Мой персональный сайт"
+              />
+              <input type="hidden" name="form_from" value="dp04625@gmail.com" />
+              <input type="hidden" name="admin_email" value="dp97_97@mail.ru" />
+              <input
+                type="hidden"
+                name="form_subject"
+                value="Сообщение с сайта"
+              />
+              <!-- END  Hidden Required fields-->
+
+              <input
+                class="contact-form__input"
+                type="text"
+                name="name"
+                placeholder="Имя"
+              /><br />
+              <input
+                class="contact-form__input"
+                type="text"
+                name="email"
+                placeholder="E-mail"
+              /><br />
+              <div>
+                <input
+                  class="contact-form__input contact-form__input--half-width"
+                  type="text"
+                  name="skype"
+                  placeholder="Skype"
+                />
+                <input
+                  class="contact-form__input contact-form__input--half-width"
+                  type="text"
+                  name="phone"
+                  placeholder="Телефон"
+                />
+              </div>
+              <div class="contact-form__bg-pencil">
+                <textarea
+                  class="contact-form__textarea"
+                  name="message"
+                  placeholder="Ваше сообщение"
+                ></textarea
+                ><br />
+              </div>
+              <input
+                class="contact-form__submit"
+                name="button-submit"
+                type="submit"
+                value="Отправить"
+              />
+            </form>
+            <div id="answer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // Контакты -->
+
+    <!-- Копирайт -->
+    <div class="copyright">
+      <div class="container">
+        <p class="copyright__label">©2019 Потехин Дмитрий</p>
+        <p>Веб-разработчик из Орла, занимаюсь вёрсткой и созданием сайтов.</p>
+        <br />
+        <p>
+          Этот сайт сделал в рамках прохождения обучения по вёрстке на курсах от
+          <a href="https://webcademy.ru/">WebCademy.ru</a>
+        </p>
+      </div>
+    </div>
+    <!-- // Копирайт -->
+
+    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="libs/jquery-validation-1.19.1/jquery.validate.js"></script>
+    <script src="libs/mixitup-v3/patrickkunka-mixitup-61dac05/dist/mixitup.min.js"></script>
+    <script src="libs/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

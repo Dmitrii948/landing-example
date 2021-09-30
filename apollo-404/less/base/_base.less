@@ -1,0 +1,110 @@
+html,
+body {
+    height: 100%;
+    font-family: 'Noto Sans', sans-serif;
+    min-width: 320px;
+}
+
+html {
+    font-size: 10px;
+    line-height: 1.4;
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 50px;
+
+    @media(min-width:1200px) {
+        padding-bottom: 70px;
+    }
+
+    &--lg-p-b-0 {
+
+        @media(min-width:1200px) {
+            padding-bottom: 0;
+        }
+    }
+
+    &--p-t-70 {
+        padding-top: 70px;
+    }
+}
+
+.heading {
+    font-family: 'Noto Sans', sans-serif;
+    position: relative;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 48px;
+    color: #333333;
+    font-size: 28px;
+    margin-bottom: 30px;
+
+    @media (min-width: 1200px) {
+        font-size: 38px;
+        margin-bottom: 40px;
+    }
+
+    &--small-margin {
+        margin-bottom: 20px;
+    }  
+
+    &--number:before {
+        line-height: normal;
+        width: 26px;
+        height: 26px;
+        display: block;
+        border-radius: 13px;
+        background-color: #ffc80a;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 2px;
+        position: absolute;
+        left: -13px;
+        top: -40px;
+
+        @media (min-width: 1200px) {
+            left: -32px;
+            top: -30px;
+        }
+    }
+
+    &--number-1:before {
+        content: ' 1 ';
+    }
+
+    &--number-2:before {
+        content: ' 2 ';
+    }
+}
+
+p {
+    font-family: 'Noto Sans';
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #777777;
+}
+
+.line {
+    border-top: 1px solid #CAD8E3;
+}
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
+@media only screen and (max-width : 1200px) {}
+
+/* Medium Devices, Desktops - adaptive styles bofore 992px */
+@media only screen and (max-width : 992px) {}
+
+/* Small Devices, Tablets - adaptive styles bofore 768px */
+@media only screen and (max-width : 768px) {}
+
+/* Extra Small Devices, Phones - adaptive styles bofore 480px */
+@media only screen and (max-width : 480px) {}
+
+/* Custom, iPhone Retina - adaptive styles bofore 320px */
+@media only screen and (max-width : 320px) {}

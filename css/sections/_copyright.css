@@ -1,0 +1,25 @@
+.copyright {
+  background-color: #003f6d;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  line-height: 1.4;
+}
+.copyright p.copyright__label {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #82b3d7;
+}
+.copyright p {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #5e92b9;
+  margin: 0 0 10px;
+}
+.copyright p:last-child {
+  margin-bottom: 0;
+}
+.copyright a {
+  text-decoration: underline;
+  color: #5e92b9;
+}
